@@ -17,7 +17,7 @@ The **Income Expense Tracker** is a Python-based command-line application design
 1. **Installation**: Clone the repository to your local machine.
 
     ```bash
-    git clone https://github.com/your-username/income-expense-tracker.git
+    git clone https://github.com/ajitesh-sivakumar/income-expense-tracker.git
     ```
 
 2. **Run the Application**: Execute the `main.py` file to start the Income Expense Tracker.
