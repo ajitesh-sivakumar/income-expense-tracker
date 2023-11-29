@@ -36,21 +36,23 @@ The **Income Expense Tracker** is a Python-based command-line application design
 ```bash
 1. Register
 2. Login
-3. ...
 ```
 
 ### Adding a Transaction
 ```bash
-Enter your choice: 3 Enter the transaction amount: 50.0 
+Enter your choice: 3 
+Enter the transaction amount: 50.0 
 Enter the transaction category: Grocery 
-Enter the transaction type: Expense Enter the currency (default is CAD): CAD
+Enter the transaction type: Expense 
+Enter the currency (default is CAD): CAD
 ```
 
 ### Generating a Report
 
 ```bash
 Enter your choice: 7
-Report generated successfully. Saved as: your_username_report_2023-12-01_14-30-00.pdf
+Report generated successfully. 
+Saved as: your_username_report_2023-12-01_14-30-00.pdf
 ```
 
 ## Contributing
