@@ -59,4 +59,4 @@ Saved as: your_username_report_2023-12-01_14-30-00.pdf
 Contributions are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
 
 ## License
-This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE).
+This project is licensed under the [MIT License](https://mit-license.org/).
