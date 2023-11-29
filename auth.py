@@ -11,14 +11,14 @@ def generate_random_password(length=12):
     return password
 
 
-def hash_password(password):
+def hash_data(data):
     salt = bcrypt.gensalt()
-    hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
-    return hashed_password
+    hashed_data = bcrypt.hashpw(data.encode('utf-8'), salt)
+    return hashed_data
 
 
-def check_password(password, hashed_password):
-    return bcrypt.checkpw(password.encode('utf-8'), hashed_password)
+def check_hashed_data(plain_data, hashed_data):
+    return bcrypt.checkpw(plain_data.encode('utf-8'), hashed_data)
 
 
 def load_data():
@@ -54,8 +54,17 @@ def register_user(username, password=None):
                 print('Invalid choice. Setting a custom password.')
                 password = getpass('Enter your password:')
 
-        hashed_password = hash_password(password)
-        data = ['users'][username] = {'password': hashed_password, 'transactions:': [], 'budgets': {}}
+        security_question = input('Enter your security question:')
+        security_answer = getpass('Enter the answer to your security question:')
+        hashed_security_answer = hash_data(security_answer)
+
+        hashed_password = hash_data(password)
+        data = ['users'][username] = {
+            'password': hashed_password,
+            'security_question': security_question,
+            'security_answer': hashed_security_answer,
+            'transactions:': [],
+            'budgets': {}}
         save_data(data)
         print('User registered successfully!')
 
@@ -67,7 +76,25 @@ def register_user(username, password=None):
 
 def login(username, password):
     data = load_data()
-    if username in data['users'] and check_password(password, data['user'][username]['password']):
+    if username in data['users'] and check_hashed_data(password, data['user'][username]['password']):
         return data, data['users'][username]
     else:
         return None, None
+
+
+def forgot_password(username):
+    data = load_data()
+    if username in data['users']:
+        user = data['users'][username]
+        print(f"Security Question: {user['security_question']}")
+        answer_attempt = getpass('Enter the answer:')
+        if check_hashed_data(answer_attempt, user['security_answer']):
+            new_password = getpass('Enter new password:')
+            hashed_new_password = hash_data(new_password)
+            user['password'] = hashed_new_password
+            save_data(data)
+            print('Password changed successfully.')
+        else:
+            print('Incorrect answer! Password reset failed.')
+    else:
+        print('User not found!')
