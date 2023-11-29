@@ -54,19 +54,14 @@ def main():
                 print("Invalid choice. Please enter a valid option.")
         else:
             if choice == '1':
-                # Assuming add_transaction is a function in transactions.py
                 add_transaction(logged_in_user)
             elif choice == '2':
-                # Assuming view_transactions is a function in transactions.py
-                view_transactions(logged_in_user)
+                view_transaction(logged_in_user)
             elif choice == '3':
-                # Assuming edit_transaction is a function in transactions.py
                 edit_transaction(logged_in_user)
             elif choice == '4':
-                # Assuming delete_transaction is a function in transactions.py
                 delete_transaction(logged_in_user)
             elif choice == '5':
-                # Assuming view_all_transactions is a function in transactions.py
                 view_all_transactions(logged_in_user)
             elif choice == '6':
                 logged_in_user = None
