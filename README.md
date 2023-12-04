@@ -1,62 +1,49 @@
+# Income Expense Tracker 💰
 
-# 💰 Income Expense Tracker
+A simple and secure Python Command-Line Interface (CLI) application for tracking income and expenses.
 
-The **Income Expense Tracker** is a Python-based command-line application designed to help users manage their financial transactions efficiently. The application allows users to track income and expenses, generate financial reports, set budgets, and visualize transaction data through graphs.
+## Overview
+
+The Income Expense Tracker is a Python CLI application designed to help users manage their finances by tracking income and expenses. It provides a secure and user-friendly interface for recording transactions.
 
 ## Features
 
-- 📈 **Transaction Management**: Add, edit, and delete financial transactions.
-- 📊 **Graphical Representation**: Visualize transaction data through interactive graphs.
-- 📄 **Generate Reports**: Create comprehensive PDF reports for better financial insights.
-- 💼 **Budgeting**: Set budgets for different expense categories.
-- 🌍 **Multi-Currency Support**: Track transactions in various currencies.
-- 📋 **Categorize Payments**: Organize transactions into meaningful categories.
+- **Transaction Management:** Add, view, edit, and delete income and expense transactions.
+- **User Authentication:** Secure user registration, login, and password recovery.
 
-## Getting Started
+## Prerequisites
 
-1. **Installation**: Clone the repository to your local machine.
+- Python 3.6 or higher
+- Dependencies: bcrypt
 
-    ```bash
-    git clone https://github.com/ajitesh-sivakumar/income-expense-tracker.git
-    ```
+## Installation
 
-2. **Run the Application**: Execute the `main.py` file to start the Income Expense Tracker.
+1. Clone the repository:
 
-    ```bash
-    cd income-expense-tracker
-    python main.py
-    ```
+   ```bash
+   git clone https://github.com/your-username/income-expense-tracker.git
 
-3. **Usage**: Follow the on-screen prompts to register, log in, and explore the application features.
+2. Install dependencies:
 
-## Usage Examples
-
-### Registration
-
-```bash
-1. Register
-2. Login
+```
+pip install -r requirements.txt
 ```
 
-### Adding a Transaction
-```bash
-Enter your choice: 3 
-Enter the transaction amount: 50.0 
-Enter the transaction category: Grocery 
-Enter the transaction type: Expense 
-Enter the currency (default is CAD): CAD
-```
+## Usage
 
-### Generating a Report
-
-```bash
-Enter your choice: 7
-Report generated successfully. 
-Saved as: your_username_report_2023-12-01_14-30-00.pdf
+1. Navigate to the project directory:
 ```
+cd income-expense-tracker
+```
+2. Run the application:
+```
+python main.py
+```
+3. Follow the on-screen instructions to manage your income and expenses.
 
 ## Contributing
-Contributions are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
 
 ## License
-This project is licensed under the [MIT License](https://mit-license.org/).
+
+This project is licensed under the MIT License

@@ -75,7 +75,6 @@ def register(username):
             'security_question': security_question,
             'security_answer': hashed_security_answer,
             'transactions': [],
-            'budgets': {}
         }
         save_data(data)
         print('User registered successfully!')
