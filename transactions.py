@@ -57,7 +57,7 @@ def edit_transaction(username):
     transactions = get_user_transactions(username)
     if transactions:
         index = int(input("Enter the index of the transaction to edit: "))
-        view_transaction(username)  # Prompt for the index and show the details
+        view_transaction(username)
         if 0 <= index < len(transactions):
             amount = float(input("Enter the new transaction amount: "))
             description = input("Enter the new transaction description: ")
