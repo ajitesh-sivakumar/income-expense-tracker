@@ -1,18 +1,1 @@
-{
-  "users": {
-    "alice": {
-      "password": "$2b$12$g2e1Xl3U2CN/2s8GM1SBXuLKZilzvShYunZBoAmpb9VjLMqAsG9/e",
-      "security_question": "What is your favorite color?",
-      "security_answer": "$2b$12$fj4P8It3lx7djjF6B6ZTIO6Hpm5kiJFL6AqwaQXeqV.7mFmykU3pW",
-      "transactions": [],
-      "budgets": {}
-    },
-    "bob": {
-      "password": "$2b$12$8zWqzKss3PmnhI45c42Ev.mDD3ORg2Vz8w/v.YkPfi.3.7ls1ioee",
-      "security_question": "In which city were you born?",
-      "security_answer": "$2b$12$WJwsgexGd1ClHkZhrx6s.uvegWXh0cQ/hUOniWnWsbAnLMRiUJk2u",
-      "transactions": [],
-      "budgets": {}
-    }
-  }
-}
+{"users": {"ajitesh": {"password": "JDJiJDEyJGQyTGFXMlhEQTBZRXI4NlNtU0ZUSS4xRUdlYmVrS1YxYjFybUZnQnJnb2dRejZzSDlvZ3lP", "security_question": "First Pet?", "security_answer": "JDJiJDEyJG9MZWIvWkV3R2owTUlMaTBPQncybU9GVkY5M2Rad3dBWkF4SFdtY1hIS2podVhEeHFqLlBx", "transactions": [{"amount": 50.0, "description": "Food"}], "budgets": {}}}}
