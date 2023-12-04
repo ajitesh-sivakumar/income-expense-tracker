@@ -97,12 +97,3 @@ def view_all_transactions():
                 print(f"Amount: {transaction['amount']}, Description: {transaction['description']}")
         else:
             print(f"No transactions for {username}.")
-
-# Example usage:
-# Uncomment the next lines for testing
-# username = 'example_user'
-# add_transaction(username)
-# add_transaction(username)
-# view_transaction(username)
-# edit_transaction(username)
-# view_all_transactions()
